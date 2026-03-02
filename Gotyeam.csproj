@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Imagenes\correo.png" />
+    <None Remove="Imagenes\gotyeam_fondo.png" />
+    <None Remove="Imagenes\gotyeam_logo.png" />
+    <None Remove="Imagenes\llave.png" />
+    <None Remove="Imagenes\user.png" />
+    <None Remove="Imagenes\usuario.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FontAwesome.WPF" Version="4.7.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SplashScreen Include="Imagenes\gotyeam_logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Imagenes\correo.png" />
+    <Resource Include="Imagenes\gotyeam_fondo.png" />
+    <Resource Include="Imagenes\llave.png" />
+    <Resource Include="Imagenes\user.png" />
+  </ItemGroup>
+
+</Project>

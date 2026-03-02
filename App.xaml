@@ -1,0 +1,35 @@
+﻿<Application x:Class="Gotyeam.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Gotyeam"
+             xmlns:vm="clr-namespace:Gotyeam.MVVM.ViewModel"
+             xmlns:view="clr-namespace:Gotyeam.MVVM.View"
+             StartupUri="MVVM/View/LoginView.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/UIColors.xaml"/>
+                <ResourceDictionary Source="/Styles/ButtonStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate DataType="{x:Type vm:GamesViewModel}">
+                <view:GamesView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:UsersViewModel}">
+                <view:UsersView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:EmployeesViewModel}">
+                <view:EmployeesView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:ProfileViewModel}">
+                <view:ProfileView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:SettingsViewModel}">
+                <view:SettingsView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:AboutViewModel}">
+                <view:AboutView/>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
