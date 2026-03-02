@@ -54,8 +54,6 @@ Clases dedicadas a establecer peticiones y la obtención de datos mediante el pr
 
 ## 2. Requisitos del Enunciado (PDF) - Evaluación de Cumplimiento
 
-Al revisar tu proyecto WPF frente a las exigencias descritas en el PDF del **PROYECTO FINAL 2025-2026**, aquí están los requisitos agrupados por los que tienes logrados y los que te restan por acometer o solucionar.
-
 ### ✅ REQUISITOS CUMPLIDOS
 
 1.  **Arquitectura MVVM**: El requerimiento central para la calificación de (4 / 4 Estrellas) **está cumplido de manera rotunda**. Has separado cuidadosamente el código en subcarpetas de Model-View-ViewModel, controlando los estados y eventos a través de Bindings y el `MainViewModel`.
